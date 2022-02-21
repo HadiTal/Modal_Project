@@ -1,0 +1,217 @@
+body {
+    direction: ltr;
+    background-color: #7d2ae8;
+}
+
+@font-face {
+    font-family: font-dana;
+    src: url("../css/font-2/dana-demibold.eot"), url("../css/font-2/dana-demibold.otf"), url("../css/font-2/dana-demibold.svg"), url("../css/font-2/dana-demibold.ttf"), url("../css/font-2/dana-demibold.woff");
+}
+
+@font-face {
+    font-family: font-iran;
+    src: url("../css/font-3/IRANSans_Light/fonts/IRANSans_Light.eot"), url("../css/font-3/IRANSans_Light/fonts/IRANSans_Light.otf"), url("../css/font-3/IRANSans_Light/fonts/IRANSans_Light.svg"), url("../css/font-3/IRANSans_Light/fonts/IRANSans_Light.ttf"), url("../css/font-3/IRANSans_Light/fonts/IRANSans_Light.woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(3);
+    z-index: 100;
+}
+
+.btn-show-moadal {
+    color: #7d2ae8;
+    font-size: 18px;
+    padding: 10px 25px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #7d2ae8;
+    z-index: 0;
+}
+
+.container-modal {
+    width: 360px;
+    height: 300px;
+    z-index: 5;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebedf9;
+}
+
+.close {
+    color: #878787;
+    font-size: 17px;
+    background: #f2f3fb;
+    height: 33px;
+    width: 33px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.content {
+    height: 80%;
+    width: 100%;
+}
+
+.header-titr {
+    font-size: 21px;
+    font-weight: 600px;
+    font-family: font-dana;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.paragraph-share {
+    padding: 1em;
+    font-family: font-iran;
+}
+
+p {
+    font-family: font-iran;
+    font-size: 0.8em;
+}
+
+ul {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+ul a:nth-child(1) {
+    color: #1877f2;
+    border-color: #b7d4fb;
+}
+
+ul a:nth-child(2) {
+    color: #46c1f6;
+    border-color: #b6e7fc;
+}
+
+ul a:nth-child(3) {
+    color: #e1306c;
+    border-color: #f5bccf;
+}
+
+ul a:nth-child(4) {
+    color: #25d366;
+    border-color: #bef4d2;
+}
+
+ul a:nth-child(5) {
+    color: #0088cc;
+    border-color: #b3e6ff;
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0 5px;
+    border: 1px solid #e1e1e1;
+    direction: rtl;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    font-size: 1em;
+    width: 7%;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    outline: none;
+    border: solid 1px#fff;
+}
+
+.copy-btn {
+    margin-left: auto;
+    color: #fff;
+    padding: 8px 30px;
+    background: #7d2ae8;
+    font-size: 0.9em;
+    border-radius: 3px;
+    border: solid 1px #7d2ae8;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.filter {
+    filter: blur(50px);
+}
